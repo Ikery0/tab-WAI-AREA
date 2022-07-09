@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="tab_area">
+    <dl id="js-tab01" class="tab01">
+      <dt class="tab01_dt">
+        <ul role="tablist" class="tab_list">
+          <li role="presentation" class="tab_btn">
+            <button class="js-tabTrigger" role="tab" aria-controls="panel01" aria-selected="true" tabindex="0">
+              tab1
+            </button>
+          </li>
+          <li role="presentation" class="tab_btn">
+            <button class="js-tabTrigger" role="tab" aria-controls="panel02" aria-selected="false" tabindex="-1">
+              tab2
+            </button>
+          </li>
+          <li class="tab_btn">
+            <button class="js-tabTrigger" role="tab" aria-controls="panel03" aria-selected="false" tabindex="-1">
+              tab3
+            </button>
+          </li>
+        </ul>
+      </dt>
+
+      <dd class="tab01_dd">
+        <ul class="contents_list">
+          <li id="panel01" role="tabpanel" aria-hidden="false" tabindex="0" class="content tab01_content">content1</li>
+          <li id="panel02" role="tabpanel" aria-hidden="true" tabindex="0" class="content tab01_content">content2</li>
+          <li id="panel03" role="tabpanel" aria-hidden="true" tabindex="0" class="content tab01_content">content3</li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+
+  <!-- <div class="tab_area">
+    <dl class="tab02">
+      <dt class="tab02_dt">
+        <ul role="tablist" class="tab_list">
+          <li role="presentation" class="tab_btn">
+            <button class="js-tab02_trigger" role="tab" aria-controls="panel01" aria-selected="true" tabindex="0">
+              tab1
+            </button>
+          </li>
+          <li role="presentation" class="tab_btn">
+            <button class="js-tab02_trigger" role="tab" aria-controls="panel02" aria-selected="false" tabindex="-1">
+              tab2
+            </button>
+          </li>
+          <li class="tab_btn">
+            <button class="js-tab02_trigger" role="tab" aria-controls="panel03" aria-selected="false" tabindex="-1">
+              tab3
+            </button>
+          </li>
+        </ul>
+      </dt>
+
+      <dd class="tab02_dd">
+        <ul class="contents_list">
+          <li id="panel01" role="tabpanel" aria-hidden="false" tabindex="0" class="content tab02_content is-show">content1</li>
+          <li id="panel02" role="tabpanel" aria-hidden="true" tabindex="0" class="content tab02_content">content2</li>
+          <li id="panel03" role="tabpanel" aria-hidden="true" tabindex="0" class="content tab02_content">content3</li>
+        </ul>
+      </dd>
+    </dl>
+  </div> -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+[aria-hidden="false"] {
+  display: block;
+}
+
+
+.tab_area {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.tab_list {
+  display: flex;
+  margin: 0 -20px;
+}
+
+.tab_btn {
+  padding: 0 20px;
+
+  button {
+    //ボタンのスタイルリセット
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+    outline: none;
+
+    background-color: #ddd;
+    padding: 16px 32px;
+
+    &:focus {
+      outline: solid 2px blue;
+    }
+  }
+  
+  button[aria-selected="false"] {
+    &:hover {
+      background-color: #aaa;
+      color: #fff;
+    }
+  }
+  
+  button[aria-selected="true"] {
+    background: #555;
+    color: #fff;
+  }
+}
+
+.contents_list {
+  margin-top: 16px;
+}
+
+.contents_list {
+  margin-top: 16px;
+}
+
